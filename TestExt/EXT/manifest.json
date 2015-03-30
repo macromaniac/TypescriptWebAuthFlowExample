@@ -1,0 +1,27 @@
+{
+  "background": {
+    "page": "background.html"
+  },
+  "minimum_chrome_version": "29",
+  "browser_action": {
+    "default_icon": "resources/icon.png",
+    "default_popup": "resources/index.html"
+  },
+  "description": "Test version",
+  "web_accessible_resources": [
+    "*.js.map",
+    "*.ts"
+  ],
+  "version": "0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "https://extensionid.chromiumapp.org/*",
+    "https://github.com/*",
+    "tabs",
+    "identity"
+  ],
+
+  "key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+
+  "name": "EXT"
+}
