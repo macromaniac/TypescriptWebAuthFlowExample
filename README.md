@@ -3,12 +3,14 @@ An example chrome extension that uses web auth flow to access github.
 
 SETUP
 -----------------
-[Register a new github application](https://github.com/settings/applications/new), set its callback to provider_cb then 
-get the clientId and clientSecret, put them into ConfigFile.ts
 
 [Publish a chrome extension](https://chrome.google.com/webstore/developer/dashboard) (make it so only you can see it)
 copy the public key found under more info in the dashboard (do not inclue the -----BEGIN PUBLIC KEY----- part) into 
 the "key" field within the manifest.json file.
+
+[Register a new github application](https://github.com/settings/applications/new), set its callback to "https://<extension-id>.chromiumapp.org/provider_cb" where extension ID is found from the chrome developer dashboard (As an aside, the "provider_cb" part must match the one found in the ConfigFile.ts), then 
+get the clientId and clientSecret from the github application dashboard and put them into ConfigFile.ts. 
+
 
 Run the extension by enabling developer mode in chrome and hitting the "load unpacked extension" button under manage extension and selecting the 
 [EXT](/TestExt/EXT) folder
