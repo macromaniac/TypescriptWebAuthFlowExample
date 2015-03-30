@@ -1,5 +1,5 @@
 # TypescriptWebAuthFlowExample
-An example chrome extension that uses web auth flow to access github.
+An example chrome extension that uses launchWebAuthFlow web auth flow to access github.
 
 SETUP
 -----------------
@@ -36,6 +36,6 @@ I put the important part in Mother.ts
 			.then(data => data.forEach(elem=> console.log(elem.name)))
 			.catch(e => console.log(e));
 			
-You need to get an access token to make calls to the github api. GithubAuth does just that. 
+You need to get an access token to make calls to the github api. GithubAuth does just that. We can use the access token to get a users info, and once we get a users info we can get a users repository. This is described in the accesstoken->userInfo->userRepo promise chain.
 
-Once we get a users info we can get a users repository, that's why we have the accesstoken->userInfo->userRepo promise chain.
+As a final note I did modify chrome.d.ts because the launchWebAuthFlow function was not on definitelytyped at the time.
